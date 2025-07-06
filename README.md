@@ -35,13 +35,9 @@
 
 ## 🛠️ Cara Menjalankan Aplikasi
 
-### 1. Clone repositori
-
 ```bash
 git clone https://github.com/username/Smart-Learning-Monitor-With-AI.git
 cd Smart-Learning-Monitor-With-AI
 
-### **2. Instal dependensi dan jalankan apk**
-```bash
 npm install
 npm start
