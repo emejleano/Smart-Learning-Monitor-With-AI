@@ -1,0 +1,14 @@
+{
+  "name": "belajar-monitor",
+  "version": "1.0.0",
+  "description": "App to monitor learning condition using webcam and Teachable Machine",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Lano",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^30.0.0"
+  }
+}

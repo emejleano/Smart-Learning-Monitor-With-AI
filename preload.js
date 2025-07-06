@@ -1,0 +1,1 @@
+// You can add IPC communication here if needed

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Monitor</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Learning Monitor Emejleano</h1>
+
+    <div class="controls">
+      <div class="camera-select-wrapper">
+        <label for="camera-select">Pilih Kamera:</label>
+        <select id="camera-select">
+          <option value="">Pilih kamera...</option>
+        </select>
+      </div>
+      <button class="start-btn" onclick="init()">Mulai Belajar</button>
+      <button class="stop-btn" onclick="stopWebcam()">Jeda Sebentar</button>
+    </div>
+    
+    
+
+    <div class="main-content">
+      <div class="camera-section">
+        <h3>Live Camera</h3>
+        <div id="webcam-container">
+          <p class="placeholder">Kamera akan muncul di sini</p>
+        </div>
+      </div>
+
+      <div class="detection-section">
+        <h3>Deteksi Aktivitas</h3>
+        <div id="label-container">
+          <div class="detection-item">Menunggu deteksi...</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="notification">
+      <div id="notifikasi"></div>
+    </div>
+
+    <div class="stats">
+      <div class="stat-item">
+        <span class="stat-label">Waktu Belajar</span>
+        <span class="stat-value"><span id="belajar-time">0</span> detik</span>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-label">Terakhir Minum</span>
+        <span class="stat-value" id="terakhir-minum">-</span>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-label">Total Minum</span>
+        <span class="stat-value"><span id="total-minum">0</span> kali</span>
+      </div>
+
+      <div class="stat-item">
+        <span class="stat-label">Total Mengantuk</span>
+        <span class="stat-value"><span id="total-mengantuk">0</span> kali</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script ML dan logic -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+  <script src="assets/script.js"></script>
+</body>
+</html>
