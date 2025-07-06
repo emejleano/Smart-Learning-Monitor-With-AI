@@ -7,7 +7,7 @@
 - 🎥 **Pemantauan Webcam**: Menampilkan live feed dari kamera yang dipilih.
 - 🤖 **Deteksi Aktivitas Berbasis AI**: Menggunakan model dari [Teachable Machine](https://teachablemachine.withgoogle.com/) untuk mengenali aktivitas pengguna (misalnya: minum, mengantuk, kondisi baik).
 - 🔔 **Notifikasi Cerdas**:
-  - Mengingatkan pengguna untuk minum setiap 30 detik (dapat dikustomisasi).
+  - Mengingatkan pengguna untuk minum dalam rentang waktu yang ditentukan mis. per 30s (dapat dikustomisasi).
   - Memberi peringatan jika terdeteksi mengantuk.
 - 📊 **Statistik Real-Time**:
   - Waktu belajar
